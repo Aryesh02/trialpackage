@@ -1,0 +1,20 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryesh02/trialpackage.git"
+  },
+  "author": "Aryesh",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Aryesh02/trialpackage/issues"
+  },
+  "homepage": "https://github.com/Aryesh02/trialpackage#readme",
+  "description": ""
+}
