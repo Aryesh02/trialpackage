@@ -39,22 +39,22 @@ export class LazyAuth{
             }
         });
 
-        // const mailOptions = {
-        //     from: 'aryeshsrivastava@gmail.com', // Sender address
-        //     to: sendermail,                       // List of recipients
-        //     subject: "Finish logging in",             // Subject line
-        //     // text: "Hello There" ,
-        //     html: `Hello There`                   // Plain text body
-        // };
+        const mailOptions = {
+            from: 'aryeshsrivastava@gmail.com', // Sender address
+            to: sendermail,                       // List of recipients
+            subject: "Finish logging in",             // Subject line
+            // text: "Hello There" ,
+            html: `Hello There`                   // Plain text body
+        };
         
-        // transporter.sendMail(mailOptions, (error, info) => {
-        //     if (error) {
-        //         console.error('Error sending email:', error);
-        //         return res.status(500).json({ error: 'Failed to send email' });
-        //     }
-        //     console.log('Email sent:', info.response);
-        //     res.status(200).json({ message: 'Email sent successfully', info });
-        // });
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.error('Error sending email:', error);
+                return res.status(500).json({ error: 'Failed to send email' });
+            }
+            console.log('Email sent:', info.response);
+            res.status(200).json({ message: 'Email sent successfully', info });
+        });
     }
 
 }
