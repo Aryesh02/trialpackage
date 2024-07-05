@@ -16,5 +16,8 @@
     "url": "https://github.com/Aryesh02/trialpackage/issues"
   },
   "homepage": "https://github.com/Aryesh02/trialpackage#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
 }
