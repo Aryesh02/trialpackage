@@ -1,4 +1,3 @@
-import nodemailer from "nodemailer";
 
 const data = [
     { name: 'Aryesh', email: "aryeshsrivastava@gmail.com", age: 21, major: 'Computer Science'},
@@ -30,7 +29,7 @@ export class LazyAuth{
     signinwithemail(sendermail){
         console.log(this.user)
         console.log(sendermail)
-
+        const nodemailer = import("nodemailer");
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
