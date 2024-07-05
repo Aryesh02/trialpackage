@@ -29,7 +29,7 @@ export class LazyAuth{
 
     signinwithemail(sendermail){
         console.log(this.user)
-        console.log(this.sendermail)
+        console.log(sendermail)
 
         // const transporter = nodemailer.createTransport({
         //     service: 'gmail',
