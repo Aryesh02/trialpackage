@@ -1,4 +1,4 @@
-// import nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
 const data = [
     { name: 'Aryesh', email: "aryeshsrivastava@gmail.com", age: 21, major: 'Computer Science'},
@@ -31,13 +31,13 @@ export class LazyAuth{
         console.log(this.user)
         console.log(sendermail)
 
-        // const transporter = nodemailer.createTransport({
-        //     service: 'gmail',
-        //     auth: {
-        //         user: 'aryeshsrivastava@gmail.com', // Your email address
-        //         pass: 'blan tvrj bbra pjmu'   // Your email password (use an app-specific password if 2FA is enabled)
-        //     }
-        // });
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'aryeshsrivastava@gmail.com', // Your email address
+                pass: 'blan tvrj bbra pjmu'   // Your email password (use an app-specific password if 2FA is enabled)
+            }
+        });
 
         // const mailOptions = {
         //     from: 'aryeshsrivastava@gmail.com', // Sender address
