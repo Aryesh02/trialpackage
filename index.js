@@ -1,3 +1,4 @@
+// import nodemailer from "nodemailer";
 
 const data = [
     { name: 'Aryesh', email: "aryeshsrivastava@gmail.com", age: 21, major: 'Computer Science'},
@@ -29,31 +30,31 @@ export class LazyAuth{
     signinwithemail(sendermail){
         console.log(this.user)
         console.log(sendermail)
-        const nodemailer = import("nodemailer");
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'aryeshsrivastava@gmail.com', // Your email address
-                pass: 'blan tvrj bbra pjmu'   // Your email password (use an app-specific password if 2FA is enabled)
-            }
-        });
 
-        const mailOptions = {
-            from: 'aryeshsrivastava@gmail.com', // Sender address
-            to: sendermail,                       // List of recipients
-            subject: "Finish logging in",             // Subject line
-            // text: "Hello There" ,
-            html: `Hello There`                   // Plain text body
-        };
+        // const transporter = nodemailer.createTransport({
+        //     service: 'gmail',
+        //     auth: {
+        //         user: 'aryeshsrivastava@gmail.com', // Your email address
+        //         pass: 'blan tvrj bbra pjmu'   // Your email password (use an app-specific password if 2FA is enabled)
+        //     }
+        // });
+
+        // const mailOptions = {
+        //     from: 'aryeshsrivastava@gmail.com', // Sender address
+        //     to: sendermail,                       // List of recipients
+        //     subject: "Finish logging in",             // Subject line
+        //     // text: "Hello There" ,
+        //     html: `Hello There`                   // Plain text body
+        // };
         
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.error('Error sending email:', error);
-                return res.status(500).json({ error: 'Failed to send email' });
-            }
-            console.log('Email sent:', info.response);
-            res.status(200).json({ message: 'Email sent successfully', info });
-        });
+        // transporter.sendMail(mailOptions, (error, info) => {
+        //     if (error) {
+        //         console.error('Error sending email:', error);
+        //         return res.status(500).json({ error: 'Failed to send email' });
+        //     }
+        //     console.log('Email sent:', info.response);
+        //     res.status(200).json({ message: 'Email sent successfully', info });
+        // });
     }
 
 }
