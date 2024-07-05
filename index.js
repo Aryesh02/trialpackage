@@ -1,4 +1,7 @@
 // import nodemailer from "nodemailer";
+import express from "express";
+
+const app = express();
 
 const data = [
     { name: 'Aryesh', email: "aryeshsrivastava@gmail.com", age: 21, major: 'Computer Science'},

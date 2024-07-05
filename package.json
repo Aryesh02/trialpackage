@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Aryesh02/trialpackage#readme",
   "description": "",
   "dependencies": {
+    "express": "^4.19.2",
     "nodemailer": "^6.9.14"
   }
 }
